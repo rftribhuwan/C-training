@@ -1,0 +1,7 @@
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\bin\Debug\ArrayMinimum.exe.config
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\bin\Debug\ArrayMinimum.exe
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\bin\Debug\ArrayMinimum.pdb
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\obj\Debug\ArrayMinimum.csprojAssemblyReference.cache
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\obj\Debug\ArrayMinimum.csproj.CoreCompileInputs.cache
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\obj\Debug\ArrayMinimum.exe
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\Day2ArrayMinimum\ArrayMinimum\obj\Debug\ArrayMinimum.pdb
