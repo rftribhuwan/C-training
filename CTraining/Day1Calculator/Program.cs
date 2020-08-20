@@ -10,6 +10,7 @@ namespace Day1Calculator
     {
         static void Main(string[] args)
         {
+            int a = 0;
         }
     }
 }
