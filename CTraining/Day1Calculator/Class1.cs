@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day1Calculator
 {
-    class Program
+    class Class1
     {
-        static void Main(string[] args)
-        {
-            int a = 0;
-            int b = 0;
-        }
     }
 }
