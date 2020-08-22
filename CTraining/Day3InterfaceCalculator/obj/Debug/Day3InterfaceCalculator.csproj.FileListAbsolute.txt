@@ -1,0 +1,7 @@
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\bin\Debug\Day3InterfaceCalculator.exe.config
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\bin\Debug\Day3InterfaceCalculator.exe
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\bin\Debug\Day3InterfaceCalculator.pdb
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\obj\Debug\Day3InterfaceCalculator.csprojAssemblyReference.cache
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\obj\Debug\Day3InterfaceCalculator.csproj.CoreCompileInputs.cache
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\obj\Debug\Day3InterfaceCalculator.exe
+C:\Users\reuben.tribhuwan\source\repos\rftribhuwan\C-training\CTraining\Day3InterfaceCalculator\obj\Debug\Day3InterfaceCalculator.pdb
