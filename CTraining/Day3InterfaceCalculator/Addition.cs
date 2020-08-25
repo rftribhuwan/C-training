@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Day3InterfaceCalculator
 {
-    class Addition:ICalculator
+    class Addition:ICalculator, IScientificCalculator
     {
         public int Compute(int firstNumber, int secondNumber)
         {
