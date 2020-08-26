@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4ConstructorCalculator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4ListCalculator", "Day4ListCalculator\Day4ListCalculator.csproj", "{A7C02C18-AB4B-4B3E-B156-C957BB9210E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5FileCalculator", "Day5FileCalculator\Day5FileCalculator.csproj", "{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5StringCompare", "Day5StringCompare\Day5StringCompare.csproj", "{F5B57B7A-8715-41E1-BF05-527A1B03E208}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{A7C02C18-AB4B-4B3E-B156-C957BB9210E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7C02C18-AB4B-4B3E-B156-C957BB9210E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7C02C18-AB4B-4B3E-B156-C957BB9210E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B57B7A-8715-41E1-BF05-527A1B03E208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B57B7A-8715-41E1-BF05-527A1B03E208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B57B7A-8715-41E1-BF05-527A1B03E208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B57B7A-8715-41E1-BF05-527A1B03E208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

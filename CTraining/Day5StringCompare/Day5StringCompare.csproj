@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2E350B9-7E8D-45B4-9468-78624A4C4A9E}</ProjectGuid>
+    <ProjectGuid>{F5B57B7A-8715-41E1-BF05-527A1B03E208}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DailyProject</RootNamespace>
-    <AssemblyName>DailyProject</AssemblyName>
+    <RootNamespace>Day5StringCompare</RootNamespace>
+    <AssemblyName>Day5StringCompare</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
-    <Compile Include="Interface1.cs" />
+    <Compile Include="FileOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringOperation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TextFile1.txt">
+    <None Include="StringComparison.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

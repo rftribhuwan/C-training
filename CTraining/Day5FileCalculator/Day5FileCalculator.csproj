@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2E350B9-7E8D-45B4-9468-78624A4C4A9E}</ProjectGuid>
+    <ProjectGuid>{C8CF4E7A-37E0-4709-ADEB-B15BDD19DA20}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DailyProject</RootNamespace>
-    <AssemblyName>DailyProject</AssemblyName>
+    <RootNamespace>Day5FileCalculator</RootNamespace>
+    <AssemblyName>Day5FileCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
-    <Compile Include="Interface1.cs" />
+    <Compile Include="Calculator.cs" />
+    <Compile Include="FileOperation.cs" />
+    <Compile Include="IOOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,7 +53,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TextFile1.txt">
+    <None Include="AnswerFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

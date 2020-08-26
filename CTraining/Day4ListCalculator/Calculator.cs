@@ -12,8 +12,10 @@ namespace Day4ListCalculator
         public int Add(List<int> numbers)
         {
             result = numbers[0];
-            for(int i=1;i<numbers.Count;i++)
-                result += numbers[i];
+            foreach (var item in numbers)
+            {
+                result += item;
+            }
             return result;
         }
         public int Subtraction(List<int> numbers)

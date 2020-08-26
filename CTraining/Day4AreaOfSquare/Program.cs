@@ -13,7 +13,7 @@ namespace Day4AreaOfSquare
             int side;
             Console.WriteLine("Enter the side of a square:\t");
             side = int.Parse(Console.ReadLine());
-            Area area = new Area();
+            var area = new Area();
             Console.Write("Area of square = "+area.CalculateArea(side));
         }
     }
