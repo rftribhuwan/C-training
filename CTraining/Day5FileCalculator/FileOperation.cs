@@ -42,7 +42,7 @@ namespace Day5FileCalculator
                             sw.WriteLine("Multiplication:-" + number1 + "*" + number2 + "=" + result);
                             break;
                         case 4:
-                            sw.WriteLine("Division:-" + number1 + "/" + number2 + "=" + result);
+                            sw.WriteLine($"Division:-{ number1}/{number2}={result}");
                             break;
                         default:
                             Console.WriteLine("Invalid choice!");
