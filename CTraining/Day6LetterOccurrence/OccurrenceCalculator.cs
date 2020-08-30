@@ -11,7 +11,7 @@ namespace Day6LetterOccurrence
         public void CalculateOccurrence(string checkString)
         {
             int occurrence;
-            StringBuilder sb = new StringBuilder(checkString);
+            StringBuilder sb = new StringBuilder(checkString.ToLower());
             char singleLetter;
             for(int i =0; i<sb.Length;i++)
             {
@@ -23,7 +23,7 @@ namespace Day6LetterOccurrence
                 occurrence = 0;
                 for(int j=0; j<sb.Length;j++)
                 {
-                    if(char.ToUpper(singleLetter) == char.ToUpper(sb[j]))
+                    if(singleLetter == sb[j])
                     {
                         occurrence++;
                         sb[j] = ' ';                        
