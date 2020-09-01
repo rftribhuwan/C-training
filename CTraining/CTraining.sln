@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8FormDatabase", "Day8FormDatabase\Day8FormDatabase.csproj", "{8AF34326-57B7-47B5-8D89-72E62E614F70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{D42E65B9-946C-46CA-A762-2B76544ABBFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication4", "WebApplication4\WebApplication4.csproj", "{2A68B21B-046C-480C-B625-3330AF7F63D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D42E65B9-946C-46CA-A762-2B76544ABBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42E65B9-946C-46CA-A762-2B76544ABBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42E65B9-946C-46CA-A762-2B76544ABBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42E65B9-946C-46CA-A762-2B76544ABBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A68B21B-046C-480C-B625-3330AF7F63D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A68B21B-046C-480C-B625-3330AF7F63D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A68B21B-046C-480C-B625-3330AF7F63D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A68B21B-046C-480C-B625-3330AF7F63D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

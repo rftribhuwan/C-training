@@ -68,7 +68,26 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+            <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click1" />
+            <br />
+            <br />
+            <br />
+            <asp:GridView ID="DataDisplay" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
+                    <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                    <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                    <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
+                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
+                    <asp:BoundField DataField="Projects" HeaderText="Projects" SortExpression="Projects" />
+                    <asp:BoundField DataField="HomeAddress" HeaderText="HomeAddress" SortExpression="HomeAddress" />
+                    <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                    <asp:BoundField DataField="Rating" HeaderText="Rating" SortExpression="Rating" />
+                </Columns>
+            </asp:GridView>
+            <asp:EntityDataSource ID="EntityDataSource1" runat="server">
+            </asp:EntityDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString %>" SelectCommand="SELECT * FROM [Details]"></asp:SqlDataSource>
             <br />
             <br />
         </div>
