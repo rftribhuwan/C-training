@@ -13,9 +13,9 @@ namespace Day7SQLConnection
         {
             string connectionString = @"Data Source = ctraining.database.windows.net; Initial Catalog = myDB; User ID = reuben; Password = Pass@1234";
             var connection = new SqlConnection(connectionString);
-            string commandString = "Insert into Persons values(2,'Kumar','Neeraj','Aundh','Pune')";
+            string commandString = "Insert into Persons values(3,'Francis','Reuben','Baner','Pune')";
             string commandString1 = "Select * from Persons";
-            string commandString2 = "Update Persons set Address = 'Pimple Saudagar' where PersonID=1";
+            string commandString2 = "Update Persons set Address = 'Baner' where PersonID=1";
             var command = new SqlCommand(commandString1, connection);
             var adapter = new SqlDataAdapter();
             //var adapter1 = new SqlDataAdapter();

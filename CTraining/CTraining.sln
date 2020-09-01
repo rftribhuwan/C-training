@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day6SentenceSort", "Day6Sen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7SQLConnection", "Day7SQLConnection\Day7SQLConnection.csproj", "{6D352D37-C5ED-4FEB-BC7C-5C0D9F727225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{EA769E6D-79EA-4DBD-8B88-7165C683194C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8FormDatabase", "Day8FormDatabase\Day8FormDatabase.csproj", "{8AF34326-57B7-47B5-8D89-72E62E614F70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{6D352D37-C5ED-4FEB-BC7C-5C0D9F727225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D352D37-C5ED-4FEB-BC7C-5C0D9F727225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D352D37-C5ED-4FEB-BC7C-5C0D9F727225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA769E6D-79EA-4DBD-8B88-7165C683194C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA769E6D-79EA-4DBD-8B88-7165C683194C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA769E6D-79EA-4DBD-8B88-7165C683194C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA769E6D-79EA-4DBD-8B88-7165C683194C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF34326-57B7-47B5-8D89-72E62E614F70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
