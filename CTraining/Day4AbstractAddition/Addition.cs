@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day4AbstractAddition
 {
-    class Addition:AbstractAddition
+    public class Addition:AbstractAddition
     {
         public override int AdditionFunction(int number)
         {
