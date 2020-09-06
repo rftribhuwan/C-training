@@ -11,17 +11,15 @@ namespace Day12BusTicketBooking
 {
     public partial class Details : System.Web.UI.Page
     {
-        //static List<string> seatList;
-        string[] seat12;
+        static List<string> seatList = new List<string>();
+        static string[] seat12;
         static string seats = "";
         static int count = 0;
         static int rate = 0;
         string source, destination, date, time;
         protected void ButtonDisable(Button button)
         {
-            if (seat12 != null)
-            {
-                foreach (var items in seat12)
+                foreach (var items in seatList)
                 {
                     if (string.Compare(button.Text, items) == 0)
                     {
@@ -29,7 +27,6 @@ namespace Day12BusTicketBooking
                         button.Enabled = false;
                     }
                 }
-            }
         }
         protected void ButtonSelect(Button button)
         {
@@ -46,6 +43,7 @@ namespace Day12BusTicketBooking
             rate = 200 * count;
             Quantity.Text = count.ToString();
             TotalPrice.Text = rate.ToString();
+            button.Enabled = false;
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -69,8 +67,12 @@ namespace Day12BusTicketBooking
             var reader = command.ExecuteReader();
             while(reader.Read())
             {
-                string readerElements = reader.ToString();
+                string readerElements = reader[0].ToString();
                 seat12 = readerElements.Split(',');
+                foreach(var items in seat12)
+                {
+                    seatList.Add(items);
+                }
                 
             }
             connection.Close();
@@ -98,7 +100,8 @@ namespace Day12BusTicketBooking
             ButtonDisable(Button23);
             ButtonDisable(Button24);
             ButtonDisable(Button25);
-         
+
+
         }
 
         protected void Button25_Click(object sender, EventArgs e)
@@ -240,6 +243,7 @@ namespace Day12BusTicketBooking
             adapter.InsertCommand.Parameters.AddWithValue("@Price", rate);
             adapter.InsertCommand.ExecuteNonQuery();
             connection.Close();
+            Response.Redirect("Display.aspx");
         }
     }
 }

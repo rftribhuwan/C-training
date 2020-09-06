@@ -24,7 +24,6 @@
             <br />
             Select Destination:&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownList2" runat="server">
-                <asp:ListItem>Pune</asp:ListItem>
                 <asp:ListItem>Mumbai</asp:ListItem>
                 <asp:ListItem>Delhi</asp:ListItem>
                 <asp:ListItem>Bengaluru</asp:ListItem>

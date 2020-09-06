@@ -11,8 +11,6 @@ namespace Day12BusTicketBooking
 {
     public partial class MainPage : System.Web.UI.Page
     {
-        public string source, destination, quantity;
-        public DateTime travelDate;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +24,7 @@ namespace Day12BusTicketBooking
             for(int i=0;i<DropDownList1.Items.Count;i++) 
             {
                 item = DropDownList1.Items[i];
-                if(item.Value == abc)
+                if(string.Compare(item.Value,abc)==0)
                 {
                     continue;
                 }
@@ -38,18 +36,9 @@ namespace Day12BusTicketBooking
             
             Application["Source"] = DropDownList1.SelectedValue;
             Application["Destination"] = DropDownList2.SelectedValue;
-            Application["Date"] = Calendar1.SelectedDate.Date;
+            Application["Date"] = Calendar1.SelectedDate.ToString("dd/MM/yyyy");
             Application["Time"] = RadioButtonList1.SelectedValue;
             Response.Redirect("Details.aspx");
-
-
-            /*string connectionString = $"Data Source=IL013413\\MSSQLSERVER2; Initial Catalog = myDB; Integrated Security=true";
-            var connection = new SqlConnection(connectionString);
-            string commandString = "select count(Name) where
-            var occupiedSeats = 
-            if(Quantity.Text == "" || int.Parse(Quantity.Text)>25 || Quantity.Text >)
-            quantity = Quantity.Text;*/
-
         }
     }
 }
