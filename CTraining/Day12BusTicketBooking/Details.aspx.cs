@@ -13,9 +13,6 @@ namespace Day12BusTicketBooking
     {
         static List<string> seatList = new List<string>();
         static string[] seat12;
-        static string seats = "";
-        static int count = 0;
-        static int rate = 0;
         string source, destination, date, time;
         protected void ButtonDisable(Button button)
         {
@@ -30,31 +27,57 @@ namespace Day12BusTicketBooking
         }
         protected void ButtonSelect(Button button)
         {
+            int count,rate;
+            string tempSeats;
             button.BackColor = Color.Green;
-            if (string.IsNullOrEmpty(seats))
+            if (ViewState["seats"] == null)
             {
-                seats += button.Text;
+                
+                tempSeats = button.Text;
+                ViewState["seats"] = tempSeats;
             }
             else
             {
-                seats += "," + button.Text;
+                tempSeats = ViewState["seats"].ToString();
+                tempSeats += "," + button.Text;
+                ViewState["seats"] = tempSeats;
             }
-            count++;
+            if(ViewState["count"]!=null)
+            {
+                count = Convert.ToInt32(ViewState["count"]);
+                count++;
+                ViewState["count"] = count;
+            }
+            else
+            {
+                ViewState["count"] = 0;
+                count = Convert.ToInt32(ViewState["count"]);
+                count++;
+                ViewState["count"] = count;
+            }
             rate = 200 * count;
-            Quantity.Text = count.ToString();
-            TotalPrice.Text = rate.ToString();
+            ViewState["rate"] = rate;
+            Quantity.Text = ViewState["count"].ToString();
+            TotalPrice.Text = ViewState["rate"].ToString();
             button.Enabled = false;
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             Quantity.Text = "0";
             TotalPrice.Text = "0";
-            
 
-            source = Application["Source"].ToString();
-            destination = Application["Destination"].ToString();
-            date = Application["Date"].ToString();
-            time = Application["Time"].ToString();
+            source = Request.Cookies["Source"].Value.ToString();
+            destination = Request.Cookies["Destination"].Value.ToString();
+            date = Request.Cookies["Date"].Value.ToString();
+            time = Request.Cookies["Time"].Value.ToString();
+
+            /*source = Request.QueryString["Source"].ToString();
+            destination = Request.QueryString["Destination"].ToString(); 
+            date = Request.QueryString["Date"].ToString(); 
+            time = Request.QueryString["Time"].ToString();*/
+
+
             string connectionString = $"Data Source=IL013413\\MSSQLSERVER2; Initial Catalog = myDB; Integrated Security=true";
             var connection = new SqlConnection(connectionString);
             string commandString = $"select SeatNos from BusBooking where Source=@source and Destination=@destination and TravelDate=@date and Timing=@time";
@@ -76,32 +99,11 @@ namespace Day12BusTicketBooking
                 
             }
             connection.Close();
-            ButtonDisable(Button2);
-            ButtonDisable(Button3);
-            ButtonDisable(Button4);
-            ButtonDisable(Button5);
-            ButtonDisable(Button6);
-            ButtonDisable(Button7);
-            ButtonDisable(Button8);
-            ButtonDisable(Button9);
-            ButtonDisable(Button10);
-            ButtonDisable(Button11);
-            ButtonDisable(Button12);
-            ButtonDisable(Button13);
-            ButtonDisable(Button14);
-            ButtonDisable(Button15);
-            ButtonDisable(Button16);
-            ButtonDisable(Button17);
-            ButtonDisable(Button18);
-            ButtonDisable(Button19);
-            ButtonDisable(Button20);
-            ButtonDisable(Button21);
-            ButtonDisable(Button22);
-            ButtonDisable(Button23);
-            ButtonDisable(Button24);
-            ButtonDisable(Button25);
-
-
+            foreach(var button in this.Page.Form.Controls.OfType<Button>())
+            {
+                ButtonDisable(button);
+            }
+           
         }
 
         protected void Button25_Click(object sender, EventArgs e)
@@ -239,10 +241,13 @@ namespace Day12BusTicketBooking
             adapter.InsertCommand.Parameters.AddWithValue("@Destination", destination);
             adapter.InsertCommand.Parameters.AddWithValue("@Date", date);
             adapter.InsertCommand.Parameters.AddWithValue("@Time", time);
-            adapter.InsertCommand.Parameters.AddWithValue("@Seats", seats);
-            adapter.InsertCommand.Parameters.AddWithValue("@Price", rate);
+            adapter.InsertCommand.Parameters.AddWithValue("@Seats", ViewState["seats"].ToString());
+            adapter.InsertCommand.Parameters.AddWithValue("@Price", ViewState["rate"].ToString());
             adapter.InsertCommand.ExecuteNonQuery();
             connection.Close();
+            ViewState["count"] = null;
+            ViewState["rate"] = null;
+            ViewState["seats"] = null;
             Response.Redirect("Display.aspx");
         }
     }
