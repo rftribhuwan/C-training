@@ -31,7 +31,7 @@ namespace Day12BusTicketBooking
             for(int i=0;i<ds.Tables[0].Rows.Count;i++)
             {
                 builder.Append("<tr>");
-                builder.Append("<td>" + ds.Tables[0].Rows[i]["SrNo"] + "</td>");
+                //builder.Append("<td>" + ds.Tables[0].Rows[i]["SrNo"] + "</td>");
                 builder.Append("<td>" + ds.Tables[0].Rows[i]["Name"] + "</td>");
                 builder.Append("<td>" + ds.Tables[0].Rows[i]["Phone"] + "</td>");
                 builder.Append("<td>" + ds.Tables[0].Rows[i]["Email"] + "</td>");

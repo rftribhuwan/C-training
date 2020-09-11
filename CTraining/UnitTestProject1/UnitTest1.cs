@@ -13,7 +13,8 @@ namespace UnitTestProject1
             var addition = new Addition();
             var a = 2;
             var result = 12;
-            Assert.AreEqual(result,addition.AdditionFunction(a));
+            var actualResult = addition.AdditionFunction(a);
+            Assert.AreEqual(result,actualResult);
         }
     }
 }
