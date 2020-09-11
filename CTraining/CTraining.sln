@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateFirst", "DelegateFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateSecond", "DelegateSecond\DelegateSecond.csproj", "{97372E63-1E37-4DD1-AA96-834FFA9DCF39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAPIProgram", "FirstAPIProgram\FirstAPIProgram.csproj", "{CC83E898-1E35-42B7-A3EE-268F6BA847FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{97372E63-1E37-4DD1-AA96-834FFA9DCF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97372E63-1E37-4DD1-AA96-834FFA9DCF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97372E63-1E37-4DD1-AA96-834FFA9DCF39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC83E898-1E35-42B7-A3EE-268F6BA847FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC83E898-1E35-42B7-A3EE-268F6BA847FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC83E898-1E35-42B7-A3EE-268F6BA847FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC83E898-1E35-42B7-A3EE-268F6BA847FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
